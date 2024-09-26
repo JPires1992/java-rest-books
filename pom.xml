@@ -9,18 +9,6 @@
 	<packaging>jar</packaging>
 
 	<name>java-rest-books</name>
-    <url>https://github.com/sbouclier/java-rest-books</url>
-
-    <scm>
-        <url>https://github.com/sbouclier/java-rest-books</url>
-        <connection>scm:git:ssh://git@github.com/sbouclier/java-rest-books.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/sbouclier/java-rest-books.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-    <ciManagement>
-        <url>https://travis-ci.org/sbouclier/java-rest-books/</url>
-        <system>Travis</system>
-    </ciManagement>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -58,6 +46,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
